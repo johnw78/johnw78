@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+    <!-- Metadata -->
+    <meta charset="utf-8">
+    <base id="base-url" href="./">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <title>Trakz - </title>
+
+    <link href="../styles/tendril.css" type="text/css" rel="stylesheet" />
+
+    <script src="../scripts/script.js" type="text/javascript"></script>
+
+  </head>
+
+  <body id="main-section" class="page-menu">
+
+    <div id="wrapper">
+
+              <img id="title-image" src="../assets/images/trakz-title.png" />
+                    <h2 id="subtitle">"See how good friends look after each other through tough times"</h2>
+                    <h3 id="actiontitle">Who's story do you want to follow?</h3>
+      
+          <div id="choices">
+                          <a id="btn-priscillas_story" class="button" href="priscillas_story.html" title="Priscilla's Story" onmouseover="App.buttonToggle(this);" onmouseout="App.buttonToggle(this);" data-audio-index="1">
+        <img class="btn-image" src="../assets/images/priscilla-story.png" alt="Priscilla's Story" title="Priscilla's Story" />
+        <img class="btn-image-active" src="../assets/images/active-priscilla-story.png" alt="Priscilla's Story" title="Priscilla's Story" />
+      </a>
+                          <a id="btn-toms_story" class="button" href="toms_story.html" title="Tom's Story" onmouseover="App.buttonToggle(this);" onmouseout="App.buttonToggle(this);" data-audio-index="2">
+        <img class="btn-image" src="../assets/images/tom-story.png" alt="Tom's Story" title="Tom's Story" />
+        <img class="btn-image-active" src="../assets/images/active-tom-story.png" alt="Tom's Story" title="Tom's Story" />
+      </a>
+                          <a id="btn-behind_scenes" class="button" href="behind_scenes.html" title="Behind the Scenes" onmouseover="App.buttonToggle(this);" onmouseout="App.buttonToggle(this);" data-audio-index="3">
+        <img class="btn-image" src="../assets/images/behind-the-scenes.png" alt="Behind the Scenes" title="Behind the Scenes" />
+        <img class="btn-image-active" src="../assets/images/active-behind-the-scenes.png" alt="Behind the Scenes" title="Behind the Scenes" />
+      </a>
+      </div>
+  
+      <nav id="overlay-controls-top" class="nav-overlay" aria-role="menu">
+        <ul>
+          <li><a href="main.html" data-nav="home-nav"><img src="../assets/images/nav/home.png" /></a></li>
+          <li class="nav-right"><a href="#" data-nav="app-exit"><img src="../assets/images/nav/close.png" /></a></li>
+        </ul>
+      </nav>
+
+      <nav id="overlay-controls-bottom" class="nav-overlay" aria-role="menu">
+        <ul>
+          <li><a href="#" data-nav="audio-replay"><img src="../assets/images/nav/replay.png" /></a></li>
+          <li class="nav-right"><a href="#" data-nav="volume"><img src="../assets/images/nav/mute.png" data-volume-src="../assets/images/nav/volume.png" data-mute-src="../assets/images/nav/mute.png" /></a></li>
+                    <li class="nav-right"><a href="#" data-nav="back-nav"><img src="../assets/images/nav/back.png" /></a></li>
+        </ul>
+      </nav>
+
+      <nav id="overlay-controls-small" class="nav-overlay" aria-role="menu">
+        <ul>
+          <li><a href="main.html" data-nav="home-nav"><img src="../assets/images/nav/home.png" /></a></li>
+          <li><a href="#" data-nav="volume"><img src="../assets/images/nav/mute.png" data-volume-src="../assets/images/nav/volume.png" data-mute-src="../assets/images/nav/mute.png" /></a></li>
+          <li><a href="#" data-nav="back-nav"><img src="../assets/images/nav/back.png" /></a></li>
+        </ul>
+      </nav>
+
+      <div id="interaction-banner">
+        <img id="title-image" src="../assets/images/trakz-title.png" />
+        <h3>Welcome to Trakz!</h3>
+        <p>Click the button below to get started</p>
+        <button id="interaction-button">Get Started</button>
+      </div>
+
+              <div id="audio-tracks" data-autonext="">
+                    <meta data-audio-index="0" data-audio-src="../assets/audio/welcome.mp3" />
+                    <meta data-audio-index="1" data-audio-src="../assets/audio/priscillas_story.mp3" />
+                    <meta data-audio-index="2" data-audio-src="../assets/audio/toms_story.mp3" />
+                    <meta data-audio-index="3" data-audio-src="../assets/audio/behind_scenes.mp3" />
+                  </div>
+        <!-- Audio Player -->
+        <audio id="audioElement" type="audio/wav" autoplay src="">
+          Your browser does not support the <code>audio</code> element. You will not be able to hear instructional audio.
+        </audio>
+      
+    </div>
+
+  </body>
+
+</html>

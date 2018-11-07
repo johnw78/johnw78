@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+    <!-- Metadata -->
+    <meta charset="utf-8">
+    <base id="base-url" href="./">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <title> - </title>
+
+    <link href="../styles/tendril.css" type="text/css" rel="stylesheet" />
+
+    <script src="../scripts/script.js" type="text/javascript"></script>
+
+  </head>
+
+  <body id="behind_scenes-section" class="page-credits">
+
+    <div id="wrapper">
+
+              <img id="title-image" src="../assets/images/trakz-title.png" />
+                          <h3 id="actiontitle">Behind the Scenes</h3>
+      
+                  <div class="credits-line" id="philamena_mckenzie" data-audio-index="0">
+                  <img class='behind-scenes-image' src="../assets/images/philamena-mckenzie.png" />
+                          <p class="credits-content">
+                        Philamena McKenzie is a Burarra woman from Maningrida who works in youth services. She was a finalist in the 2017 Northern Territory young achievers awards.
+          </p>
+              </div>
+          <div class="credits-line" id="rodriguez_wilson" data-audio-index="1">
+                  <img class='behind-scenes-image' src="../assets/images/rodriguez-wilson.png" />
+                          <p class="credits-content">
+                        Rodriguez Wilson, also known as Pin Pin, is a family and youth support worker. His father is a traditional owner at Peppimenarti, however he has spent most of his upbringing at Gunblanya, in his mother’s country.
+          </p>
+              </div>
+          <div class="credits-line" id="yarran_cavalier" data-audio-index="2">
+                  <img class='behind-scenes-image' src="../assets/images/yarran-cavalier.png" />
+                          <p class="credits-content">
+                        Yarran Cavalier has been working with Indigenous communities for over 25 years. He co-ordinates the development and mentoring for youth workers across the NT.
+          </p>
+              </div>
+      
+      <nav id="overlay-controls-top" class="nav-overlay" aria-role="menu">
+        <ul>
+          <li><a href="main.html" data-nav="home-nav"><img src="../assets/images/nav/home.png" /></a></li>
+          <li class="nav-right"><a href="#" data-nav="app-exit"><img src="../assets/images/nav/close.png" /></a></li>
+        </ul>
+      </nav>
+
+      <nav id="overlay-controls-bottom" class="nav-overlay" aria-role="menu">
+        <ul>
+          <li><a href="#" data-nav="audio-replay"><img src="../assets/images/nav/replay.png" /></a></li>
+          <li class="nav-right"><a href="#" data-nav="volume"><img src="../assets/images/nav/mute.png" data-volume-src="../assets/images/nav/volume.png" data-mute-src="../assets/images/nav/mute.png" /></a></li>
+                    <li class="nav-right"><a data-nav="next-nav" href="behind_scenes_2.html"><img src="../assets/images/nav/next.png" /></a></li>
+                    <li class="nav-right"><a href="#" data-nav="back-nav"><img src="../assets/images/nav/back.png" /></a></li>
+        </ul>
+      </nav>
+
+      <nav id="overlay-controls-small" class="nav-overlay" aria-role="menu">
+        <ul>
+          <li><a href="main.html" data-nav="home-nav"><img src="../assets/images/nav/home.png" /></a></li>
+          <li><a href="#" data-nav="volume"><img src="../assets/images/nav/mute.png" data-volume-src="../assets/images/nav/volume.png" data-mute-src="../assets/images/nav/mute.png" /></a></li>
+          <li><a href="#" data-nav="back-nav"><img src="../assets/images/nav/back.png" /></a></li>
+        </ul>
+      </nav>
+
+      <div id="interaction-banner">
+        <img id="title-image" src="../assets/images/trakz-title.png" />
+        <h3>Welcome to Trakz!</h3>
+        <p>Click the button below to get started</p>
+        <button id="interaction-button">Get Started</button>
+      </div>
+
+              <div id="audio-tracks" data-autonext="true">
+                    <meta data-audio-index="0" data-audio-src="../assets/audio/philamena-mckenzie.mp3" />
+                    <meta data-audio-index="1" data-audio-src="../assets/audio/rodriguez-wilson.mp3" />
+                    <meta data-audio-index="2" data-audio-src="../assets/audio/yarran-cavalier.mp3" />
+                  </div>
+        <!-- Audio Player -->
+        <audio id="audioElement" type="audio/wav" autoplay src="">
+          Your browser does not support the <code>audio</code> element. You will not be able to hear instructional audio.
+        </audio>
+      
+    </div>
+
+  </body>
+
+</html>
